@@ -57,18 +57,18 @@ fun TasksScreen(
                     fontWeight = FontWeight.SemiBold,
                     color = MaterialTheme.colorScheme.onPrimary
                 )
-                IconButton(
-                    onClick = {
-                        onEvent(TasksEvent.SortTasks)
-                    }
-                ) {
-                    Icon(
-                        imageVector = Icons.Rounded.Sort,
-                        contentDescription = "Sort Tasks",
-                        modifier = Modifier.size(35.dp),
-                        tint = MaterialTheme.colorScheme.onPrimary
-                    )
-                }
+//                IconButton(
+//                    onClick = {
+//                        onEvent(TasksEvent.SortTasks)
+//                    }
+//                ) {
+//                    Icon(
+//                        imageVector = Icons.Rounded.Sort,
+//                        contentDescription = "Sort Tasks",
+//                        modifier = Modifier.size(35.dp),
+//                        tint = MaterialTheme.colorScheme.onPrimary
+//                    )
+//                }
             }
         },
         floatingActionButton = {
@@ -97,8 +97,8 @@ fun TasksScreen(
                 TaskItem(
                     state = state,
                     index = index,
-                    onEvent = onEvent,
-                    navController = navController
+                    navController = navController,
+                    onEvent = onEvent
                 )
             }
         }

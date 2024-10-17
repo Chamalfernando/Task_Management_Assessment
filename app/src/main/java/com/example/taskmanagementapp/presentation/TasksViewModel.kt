@@ -47,7 +47,6 @@ class TasksViewModel(
                 viewModelScope.launch {
                     dao.deleteTask(event.task) // since this is a suspend function we have to surround this with ViewModelScope Coroutine.
                 }
-
             }
 
             is TasksEvent.saveTask -> {
