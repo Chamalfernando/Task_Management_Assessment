@@ -10,13 +10,13 @@ sealed interface TasksEvent {
     data class DeleteTask(val task: Task) : TasksEvent
 
     data class saveTask(
-        val title : String,
-        val description : String
+        val title: String,
+        val description: String
     ) : TasksEvent
 
     data class updateTask(
-        val id : String,
-        val title : String,
-        val description : String
+        val id: Int,
+        val title: String,
+        val description: String
     ) : TasksEvent
 }
